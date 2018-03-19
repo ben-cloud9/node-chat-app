@@ -25,7 +25,6 @@ describe('generateLocationMessage', () => {
     var res = generateLocationMessage(from, latitude, longitude);
 
     expect(res.from).toBe(from);
-
     expect(res.url).toBe(`https://www.google.com/maps?q=${latitude},${longitude}`);
   });
 
