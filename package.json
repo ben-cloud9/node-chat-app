@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app/server/server.js",
-    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js --timeout 5000",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha app/server/**/*.test.js --timeout 5000",
     "test-watch": "nodemon --exec \"npm test\"",
     "docker:build": "docker build -t node-chat-app .",
     "docker:start": "docker run -p 3000:3000  node-chat-app"

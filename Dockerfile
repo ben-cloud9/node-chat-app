@@ -12,6 +12,8 @@ RUN npm install
 # Expose API port to the outside
 # EXPOSE 80
 
+RUN npm test
+
 # ENV PORT=80
 
 # Launch application

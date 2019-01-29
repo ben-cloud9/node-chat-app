@@ -36,7 +36,7 @@ describe('Users', () => {
   it('should remove user', () => {
     var id = 1;
     var res = users.removeUser(id);
-    expect(res[0].id).not.toEqual(1);
+    expect(res).not.toEqual(1);
   });
 
   it('should not remove user', () => {
